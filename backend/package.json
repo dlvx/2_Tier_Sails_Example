@@ -1,0 +1,29 @@
+{
+  "name": "socialfleet",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "include-all": "~0.1.6",
+    "jwt-simple": "^0.5.0",
+    "moment": "^2.13.0",
+    "rc": "1.0.1",
+    "request": "^2.72.0",
+    "sails": "~0.12.3",
+    "sails-disk": "~0.10.9",
+    "twit": "^2.2.4"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anonymous node/sails user/socialfleet.git"
+  },
+  "author": "anonymous node/sails user",
+  "license": ""
+}

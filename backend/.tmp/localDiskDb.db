@@ -1,0 +1,128 @@
+{
+  "data": {
+    "post": [
+      {
+        "message": "CSH",
+        "scheduledfor": "2016-05-16T19:58:00.000Z",
+        "owner": 7,
+        "createdAt": "2016-05-16T20:59:03.061Z",
+        "updatedAt": "2016-05-16T20:59:03.061Z",
+        "id": 16
+      },
+      {
+        "message": "Oscar Esteban Ganamos",
+        "scheduledfor": "2016-05-16T20:55:00.000Z",
+        "owner": 7,
+        "createdAt": "2016-05-16T20:59:40.873Z",
+        "updatedAt": "2016-05-16T20:59:40.873Z",
+        "id": 17
+      },
+      {
+        "message": "26",
+        "scheduledfor": "2016-05-16T21:03:00.000Z",
+        "owner": 7,
+        "createdAt": "2016-05-16T21:05:09.018Z",
+        "updatedAt": "2016-05-16T21:05:09.018Z",
+        "id": 18
+      },
+      {
+        "message": "26!",
+        "scheduledfor": "2016-05-16T21:05:00.000Z",
+        "owner": 7,
+        "isPosted": true,
+        "createdAt": "2016-05-16T21:08:01.920Z",
+        "updatedAt": "2016-05-16T21:11:38.516Z",
+        "id": 19
+      },
+      {
+        "message": "https://app.pluralsight.com/library/courses/two-tier-enterprise-app-api-development-angular-sails/table-of-contents",
+        "scheduledfor": "2016-05-16T21:19:00.000Z",
+        "owner": 7,
+        "isPosted": true,
+        "createdAt": "2016-05-16T21:18:16.280Z",
+        "updatedAt": "2016-05-16T21:19:05.479Z",
+        "id": 20
+      }
+    ],
+    "user": [
+      {
+        "twitter": "2910370983",
+        "displayName": "José Del Valle",
+        "twitterToken": "2910370983-skeWRM6quQXnKQfantSKPDt4PwOTWE43yksV7o1",
+        "twitterSecret": "lrY5TRSSDlWGmSictWO5Dlz4hjRyTxVb66VrPARLcAxps",
+        "createdAt": "2016-05-13T16:49:48.622Z",
+        "updatedAt": "2016-05-13T16:49:48.622Z",
+        "id": 7
+      }
+    ]
+  },
+  "schema": {
+    "post": {
+      "message": {
+        "type": "string"
+      },
+      "scheduledfor": {
+        "type": "datetime"
+      },
+      "isPosted": {
+        "type": "boolean"
+      },
+      "owner": {
+        "type": "integer",
+        "model": "user",
+        "foreignKey": true,
+        "alias": "owner"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "user": {
+      "email": {
+        "type": "string",
+        "unique": true
+      },
+      "displayName": {
+        "type": "string"
+      },
+      "twitter": {
+        "type": "string"
+      },
+      "twitterToken": {
+        "type": "string"
+      },
+      "twitterSecret": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 7
+    },
+    "post": {
+      "id": 20
+    }
+  }
+}
